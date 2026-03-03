@@ -1,88 +1,70 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="tr">
-  <head>
-    <!-- UTF-8 önerilir (metin/karakter bozulmalarını önler) -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>YMH354 - CSS ile Tasarım Örneği</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burak | Yazılım Mühendisi & Oyun Geliştirici</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-    <!-- External CSS (en önerilen yöntem) -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-
-  <body>
-    <a class="skip-link" href="#content">İçeriğe atla</a>
-
-    <header class="site-header">
-      <div class="container header-inner">
-        <h1 class="brand">YMH354</h1>
-        <p class="tagline">Designing with CSS: Layout, Selectors, Box Model</p>
-      </div>
+    <header>
+        <div class="container">
+            <h1>Burak</h1>
+            <h2>Yazılım Mühendisliği 3. Sınıf Öğrencisi & Oyun Geliştirici</h2>
+            <div class="social-links">
+                <a href="https://github.com/kullaniciadin" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/kullaniciadin" target="_blank">LinkedIn</a>
+                <a href="mailto:eposta@adresin.com">İletişim</a>
+            </div>
+        </div>
     </header>
 
-    <nav class="site-nav" aria-label="Ana menü">
-      <div class="container">
-        <ul class="nav-list">
-          <li><a href="#selectors">Selectors</a></li>
-          <li><a href="#layout">Layout</a></li>
-          <li><a href="#boxmodel">Box Model</a></li>
-          <li><a href="#responsive">Responsive</a></li>
-        </ul>
-      </div>
-    </nav>
+    <main class="container">
+        
+        <section class="about">
+            <h3>Hakkımda</h3>
+            <p>Merhaba, ben Burak. Yazılım mühendisliği eğitimime devam ederken bir yandan da oyun geliştirme dünyasında kendimi geliştiriyorum. Özellikle 2D RPG oyunları tasarlamak ve geliştirmek en büyük tutkularımdan biri. Hem teknik altyapımı güçlendiriyor hem de yaratıcı projeler üretiyorum.</p>
+        </section>
 
-    <main class="container layout" id="content">
-      <article class="card" id="selectors">
-        <h2>1) Selectors + Pseudo-class</h2>
-        <p>
-          Bu paragraf normal akışta. <span class="badge">.class</span> ve
-          <span id="special">#id</span> örneği içeriyor.
-        </p>
+        <section class="skills">
+            <h3>Yetenekler & Teknolojiler</h3>
+            <div class="skills-grid">
+                <span class="skill-tag">C#</span>
+                <span class="skill-tag">Unity</span>
+                <span class="skill-tag">Oyun Tasarımı</span>
+                <span class="skill-tag">Veri Yapıları & Algoritmalar</span>
+                <span class="skill-tag">2D Pixel Art</span>
+                <span class="skill-tag">OOP</span>
+            </div>
+        </section>
 
-        <p class="note">
-          Linkin üzerine gel: <a href="#selectors">hover örneği</a>
-        </p>
+        <section class="projects">
+            <h3>Projelerim</h3>
+            <div class="project-card">
+                <h4>İsimsiz 2D RPG Projesi (Geliştirme Aşamasında)</h4>
+                <p>Kendi oyun motoru mekaniklerimi ve bölüm tasarımlarımı kurguladığım, hikaye odaklı bir 2D rol yapma oyunu. Karakter gelişimi ve envanter sistemleri üzerine çalışıyorum.</p>
+            </div>
+            <div class="project-card">
+                <h4>Game Jam Katılımları</h4>
+                <p>Kısa süre içerisinde konsept belirleyip, mekanik prototiplerini çıkararak tamamladığım çeşitli mini oyun projeleri.</p>
+            </div>
+        </section>
 
-        <button class="btn" type="button">Buton</button>
-      </article>
+        <section class="education">
+            <h3>Eğitim</h3>
+            <div class="education-item">
+                <h4>Yazılım Mühendisliği (Lisans)</h4>
+                <p><em>3. Sınıf - Devam Ediyor</em></p>
+            </div>
+        </section>
 
-      <aside class="sidebar card" id="layout">
-        <h2>2) Sidebar</h2>
-        <p>
-          Bu alan tipik web sayfası düzenini (header/nav/content/sidebar/footer)
-          göstermeye yarar.
-        </p>
-
-        <div class="callout">
-          <strong>İpucu:</strong> box-sizing: border-box kullanmak hesaplamaları kolaylaştırır.
-        </div>
-      </aside>
-
-      <section class="card" id="boxmodel">
-        <h2>3) Box Model Demo</h2>
-        <div class="box-demo">
-          <div class="box">
-            <p>
-              Bu kutu; <em>content</em>, <em>padding</em>, <em>border</em>, <em>margin</em>
-              bileşenlerini görselleştirir.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="card" id="responsive">
-        <h2>4) Responsive (Media Query)</h2>
-        <p>
-          Ekran daraldığında yerleşim tek sütuna düşecek ve menü daha kompakt görünecek.
-          Tarayıcı genişliğini değiştirip gözlemleyin.
-        </p>
-      </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container">
-        <small>© YMH354 Web Design and Programming</small>
-      </div>
+    <footer>
+        <p>&copy; 2026 Burak. Tüm hakları saklıdır.</p>
     </footer>
-  </body>
+
+</body>
 </html>
