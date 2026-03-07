@@ -1,69 +1,238 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Burak | Yazılım Mühendisi & Oyun Geliştirici</title>
+    <title>Burak Enes Portakal | Game Developer</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
+    <nav class="navbar">
+        <div class="container nav-links">
+            <a href="#header">Home</a>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <header id="header">
         <div class="container">
-            <h1>Burak</h1>
-            <h2>Yazılım Mühendisliği 3. Sınıf Öğrencisi & Oyun Geliştirici</h2>
-            <div class="social-links">
-                <a href="https://github.com/kullaniciadin" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/kullaniciadin" target="_blank">LinkedIn</a>
-                <a href="mailto:eposta@adresin.com">İletişim</a>
-            </div>
+            <img src="images/profile-picture.png" alt="Burak Profile" class="profile-img"> 
+            <h1>Burak Enes PORTAKAL</h1>
+            <h2>Game Developer & Software Engineering Student</h2>
+            <p>Focused on game engine mechanics, software architecture, and creative game design; a developer who values details and immersive gameplay.</p>
         </div>
     </header>
 
     <main class="container">
         
-        <section class="about">
-            <h3>Hakkımda</h3>
-            <p>Merhaba, ben Burak. Yazılım mühendisliği eğitimime devam ederken bir yandan da oyun geliştirme dünyasında kendimi geliştiriyorum. Özellikle 2D RPG oyunları tasarlamak ve geliştirmek en büyük tutkularımdan biri. Hem teknik altyapımı güçlendiriyor hem de yaratıcı projeler üretiyorum.</p>
+        <section id="about" class="about">
+            <h3>About Me</h3>
+            <p>Hello, I'm Burak. I am a 3rd-year Software Engineering student and an aspiring Game Developer. I am experienced in gameplay systems, artificial intelligence (AI), FSM (Finite State Machines), and pathfinding algorithms. I demonstrated leadership as Vice President of Ankara University Computer Society, managing a team of 20+ members and organizing events with 1000+ participants. I have a strong background in agile workflows, technical content creation, and building impactful projects ranging from RPG mechanics to procedural maze solvers.</p>
         </section>
 
-        <section class="skills">
-            <h3>Yetenekler & Teknolojiler</h3>
-            <div class="skills-grid">
-                <span class="skill-tag">C#</span>
-                <span class="skill-tag">Unity</span>
-                <span class="skill-tag">Oyun Tasarımı</span>
-                <span class="skill-tag">Veri Yapıları & Algoritmalar</span>
-                <span class="skill-tag">2D Pixel Art</span>
-                <span class="skill-tag">OOP</span>
+        <section id="experience" class="experience">
+            <h3>Experience</h3>
+            <div class="timeline">
+                
+                <div class="timeline-item">
+                    <h4>Part-Time Student Software Engineer (AI & Application Development)</h4>
+                    <h5>Ankara University Technology Design Office</h5>
+                    <p class="timeline-date">2025 - Present</p>
+                    <ul>
+                        <li>Developed 4 AI-based software prototypes for research and internal use.</li>
+                        <li>Implemented 15+ Python-based features, improving code maintainability and modularity.</li>
+                        <li>Supported data preprocessing and ML model integration on datasets of 10K+ samples.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <h4>Vice President & Board Member</h4>
+                    <h5>Ankara University Computer Society</h5>
+                    <p class="timeline-date">2024 - Present</p>
+                    <ul>
+                        <li>Led the Event Organization Team (20+ members), delivering 5+ large-scale events with 1000+ participants.</li>
+                        <li>Managed the Game Development Team (30+ members) overseeing 3 projects.</li>
+                        <li>Organized the ANKÜ Game Jam with 100+ participants.</li>
+                        <li>Produced 10+ educational videos (C & Python) reaching 1000+ students.</li>
+                    </ul>
+                </div>
+
             </div>
         </section>
 
-        <section class="projects">
-            <h3>Projelerim</h3>
-            <div class="project-card">
-                <h4>İsimsiz 2D RPG Projesi (Geliştirme Aşamasında)</h4>
-                <p>Kendi oyun motoru mekaniklerimi ve bölüm tasarımlarımı kurguladığım, hikaye odaklı bir 2D rol yapma oyunu. Karakter gelişimi ve envanter sistemleri üzerine çalışıyorum.</p>
-            </div>
-            <div class="project-card">
-                <h4>Game Jam Katılımları</h4>
-                <p>Kısa süre içerisinde konsept belirleyip, mekanik prototiplerini çıkararak tamamladığım çeşitli mini oyun projeleri.</p>
-            </div>
-        </section>
-
-        <section class="education">
-            <h3>Eğitim</h3>
+        <section id="education" class="education">
+            <h3>Education</h3>
             <div class="education-item">
-                <h4>Yazılım Mühendisliği (Lisans)</h4>
-                <p><em>3. Sınıf - Devam Ediyor</em></p>
+                <h4>Ankara University - Faculty of Engineering</h4>
+                <p><strong>Degree:</strong> B.Sc. in Software Engineering</p>
+                <p><strong>Period:</strong> 2023 - Present</p>
+                <p><strong>GPA:</strong> 3.34 / 4.00</p>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <h3>Skills & Technologies</h3>
+            
+            <div class="skill-category">
+                <h4>Programming Languages</h4>
+                <div class="skills-grid">
+                    <span class="skill-pill">C#</span>
+                    <span class="skill-pill">C++</span>
+                    <span class="skill-pill">C</span>
+                    <span class="skill-pill">Java</span>
+                    <span class="skill-pill">Python</span>
+                    <span class="skill-pill">Dart</span>
+                    <span class="skill-pill">GDScript</span>
+                    <span class="skill-pill">HTML</span>
+                    <span class="skill-pill">CSS</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h4>Game Engines & Tools</h4>
+                <div class="skills-grid">
+                    <span class="skill-pill">Unity</span>
+                    <span class="skill-pill">Unreal Engine</span>
+                    <span class="skill-pill">Flutter</span>
+                    <span class="skill-pill">Godot</span>
+                    <span class="skill-pill">Git & GitHub</span>
+                    <span class="skill-pill">Linux (Ubuntu)</span>
+                    <span class="skill-pill">Jupyter Notebook</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h4>Software Processes & Project Management</h4>
+                <div class="skills-grid">
+                    <span class="skill-pill">Agile / Scrum</span>
+                    <span class="skill-pill">Jira</span>
+                    <span class="skill-pill">Trello</span>
+                    <span class="skill-pill">OOP</span>
+                    <span class="skill-pill">Data Structures & Algorithms</span>
+                    <span class="skill-pill">Project Management</span>
+                    <span class="skill-pill">Project Planning</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h4>Game Design & Mechanics</h4>
+                <div class="skills-grid">
+                    <span class="skill-pill">Finite State Machines (FSM)</span>
+                    <span class="skill-pill">Pathfinding (A*, BFS, DFS, Dijkstra)</span>
+                    <span class="skill-pill">Gameplay Systems</span>
+                    <span class="skill-pill">Level Design</span>
+                    <span class="skill-pill">Basic AI</span>
+                    <span class="skill-pill">Game Design</span>
+                    <span class="skill-pill">Game Mechanics</span>
+                    <span class="skill-pill">Game Theory</span>
+                    <span class="skill-pill">RPG</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h3>Projects</h3>
+            
+            <div class="projects-horizontal-scroll">
+                
+                <div class="project-card">
+                    <img src="images/endless runner.png" alt="Endless Runner" class="project-img">
+                    <div class="project-content">
+                        <h4>Endless Runner</h4>
+                        <p>Developed a solo endless runner with increasing speed and checkpoint-based time extension mechanics.</p>
+                        <a href="https://github.com/burakenesportakal/Run_Butcher" target="_blank" class="project-btn">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/pathfinder.png" alt="PathFinder" class="project-img">
+                    <div class="project-content">
+                        <h4>Maze Solver / PathFinder</h4>
+                        <p>Procedural maze generation and solving simulation using DFS, BFS, Dijkstra, and A* algorithms.</p>
+                        <a href="https://github.com/burakenesportakal/MazeSolverWithUnity" target="_blank" class="project-btn">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/era.jpg" alt="RPG - ERA" class="project-img">
+                    <div class="project-content">
+                        <h4>RPG - ERA</h4>
+                        <p>A comprehensive RPG featuring quest, inventory, skill tree, and enemy AI systems built with FSM and modular design.</p>
+                        <a href="https://github.com/burakenesportakal/RPG-ERA" target="_blank" class="project-btn">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/parasite.png" alt="Parazite" class="project-img">
+                    <div class="project-content">
+                        <h4>Parazite</h4>
+                        <p>A suspenseful horror game jam project developed around the "Take over" theme.</p>
+                        <a href="https://github.com/burakenesportakal/HalloweenJam" target="_blank" class="project-btn">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/qubix.jpg" alt="Qubix" class="project-img">
+                    <div class="project-content">
+                        <h4>Qubix</h4>
+                        <p>A specialized case study project designed and developed for Good Job Games.</p>
+                        <a href="https://github.com/burakenesportakal/Qubix" target="_blank" class="project-btn">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/ayazjam.png" alt="Perfect Butterfly" class="project-img">
+                    <div class="project-content">
+                        <h4>Perfect Butterfly</h4>
+                        <p>A fast-paced game project created in a short timeframe during the Ayazjam event.</p>
+                        <a href="https://github.com/burakenesportakal/Project_Butterfly" target="_blank" class="project-btn">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/bomboclat.png" alt="Bomboclat" class="project-img">
+                    <div class="project-content">
+                        <h4>Bomboclat</h4>
+                        <p>A creative game jam project developed during the Jamination event.</p>
+                        <a href="https://github.com/burakenesportakal/Jaminton8" target="_blank" class="project-btn">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/mask.png" alt="Mask" class="project-img">
+                    <div class="project-content">
+                        <h4>Mask</h4>
+                        <p>A game project designed and coded during the Global Game Jam marathon.</p>
+                        <a href="https://github.com/burakenesportakal/GGJMASK" target="_blank" class="project-btn">View on GitHub</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h3>Contact</h3>
+            <div class="contact-card">
+                <p><strong>Phone:</strong> <a href="tel:+905075882639">+90 507 588 2639</a></p>
+                <p><strong>Email:</strong> <a href="mailto:burak.enesportakal@gmail.com">burak.enesportakal@gmail.com</a></p>
+                <p><strong>Location:</strong> Ankara, Çankaya</p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/burak-enes-portakal-591a322a2/" target="_blank">View Profile</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/burakenesportakal" target="_blank">github.com/burakenesportakal</a></p>
+                <p><strong>Medium:</strong> <a href="https://medium.com/@burak.enesportakal" target="_blank">medium.com/@burak.enesportakal</a></p>
             </div>
         </section>
 
     </main>
 
     <footer>
-        <p>&copy; 2026 Burak. Tüm hakları saklıdır.</p>
+        <p>&copy; 2026 Burak Enes Portakal. All rights reserved.</p>
     </footer>
 
 </body>
