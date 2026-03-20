@@ -21,12 +21,10 @@ html {
 
 body {
     font-family: 'Inter', sans-serif;
-    
     background: linear-gradient(rgba(11, 12, 16, 0.88), rgba(11, 12, 16, 0.88)), url('images/background.jpg');
-    background-size: cover; /* Resmi ekrana tam sığdırır */
-    background-position: center; /* Resmi ortalar */
-    background-attachment: fixed; /* Sayfayı kaydırırken arka plan sabit kalır (Parallax efekti) */
-    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: var(--text-main);
     line-height: 1.6;
 }
@@ -139,7 +137,7 @@ section h3::after {
     border-radius: 2px;
 }
 
-/* --- YENİ: Deneyim Zaman Çizelgesi (Timeline) --- */
+/* Deneyim Zaman Çizelgesi (Timeline) */
 .timeline {
     position: relative;
     padding-left: 30px;
@@ -256,6 +254,47 @@ section h3::after {
     box-shadow: 0 0 10px rgba(102, 252, 241, 0.4);
 }
 
+/* --- YENİ EKLENEN PROJE OKLARI --- */
+.projects-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(31, 40, 51, 0.9);
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.scroll-btn:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 15px rgba(102, 252, 241, 0.6);
+}
+
+.left-btn {
+    left: -20px;
+}
+
+.right-btn {
+    right: -20px;
+}
+
 /* Yatay Kaydırılabilir Projeler */
 .projects-horizontal-scroll {
     display: flex;
@@ -263,7 +302,9 @@ section h3::after {
     gap: 20px;
     padding-bottom: 20px;
     scroll-snap-type: x mandatory;
-    align-items: stretch; /* Tüm kartların aynı yükseklikte olmasını sağlar */
+    align-items: stretch;
+    scroll-behavior: smooth;
+    width: 100%;
 }
 
 .projects-horizontal-scroll::-webkit-scrollbar {
@@ -282,7 +323,7 @@ section h3::after {
 }
 
 .project-card {
-    flex: 0 0 320px; /* Tüm kartların genişliğini 320px'e sabitler */
+    flex: 0 0 320px;
     background-color: var(--card-bg);
     border: 1px solid var(--border-color);
     border-radius: 10px;
@@ -309,7 +350,7 @@ section h3::after {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    flex-grow: 1; /* Butonu en alta itmek için aradaki boşluğu doldurur */
+    flex-grow: 1;
 }
 
 .project-content h4 {
@@ -322,7 +363,7 @@ section h3::after {
     color: var(--text-main);
     font-size: 0.95rem;
     margin-bottom: 20px;
-    flex-grow: 1; /* Yazı kısa olsa bile butonun en altta kalmasını garantiler */
+    flex-grow: 1;
 }
 
 .project-btn {
@@ -336,7 +377,7 @@ section h3::after {
     text-decoration: none;
     font-size: 0.95rem;
     transition: all 0.3s ease;
-    margin-top: auto; /* Düğmeyi her zaman kartın en altına yapıştırır */
+    margin-top: auto;
 }
 
 .project-btn:hover {
@@ -345,12 +386,6 @@ section h3::after {
     box-shadow: 0 0 15px rgba(102, 252, 241, 0.4);
 }
 
-/* Mobil Uyumluluk Güncellemesi */
-@media (max-width: 600px) {
-    .project-card {
-        flex: 0 0 280px; /* Mobilde kartlar ekrana sığması için biraz daralır */
-    }
-}
 /* İletişim Linkleri */
 .contact-card p {
     margin-bottom: 12px;
@@ -377,21 +412,88 @@ footer {
     margin-top: 50px;
 }
 
-/* Mobil Uyumluluk */
-@media (max-width: 600px) {
+/* =========================================
+   MEDYA SORGULARI (RESPONSIVE TASARIM)
+   ========================================= */
+
+/* Tablet ve Küçük Masaüstü Ekranlar İçin */
+@media (max-width: 768px) {
+    header {
+        padding: 50px 0 40px;
+    }
+
     header h1 {
         font-size: 2.2rem;
     }
+
     .nav-links {
         gap: 15px;
+        font-size: 0.9rem;
     }
-    .project-card {
-        min-width: 260px;
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
     }
+
+    /* Dokunmatik ekranlarda okları gizle */
+    .scroll-btn {
+        display: none;
+    }
+}
+
+/* Mobil Cihazlar İçin (Telefonlar) */
+@media (max-width: 480px) {
+    header {
+        padding: 40px 0 30px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    header h2 {
+        font-size: 1rem;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+    
+    .nav-links a {
+        font-size: 0.85rem;
+    }
+
     .timeline {
         padding-left: 20px;
+        margin-left: 5px;
     }
+
+    .timeline-item {
+        padding: 15px;
+    }
+
     .timeline-item::before {
         left: -28px;
+        width: 12px;
+        height: 12px;
+        top: 20px;
+    }
+
+    .project-card {
+        flex: 0 0 260px; 
+    }
+
+    .project-img {
+        height: 150px;
+    }
+
+    .skill-pill {
+        padding: 6px 15px;
+        font-size: 0.8rem;
+    }
+
+    section h3 {
+        font-size: 1.5rem;
     }
 }

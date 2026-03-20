@@ -140,80 +140,86 @@
         <section id="projects" class="projects">
             <h3>Projects</h3>
             
-            <div class="projects-horizontal-scroll">
-                
-                <div class="project-card">
-                    <img src="images/endless runner.png" alt="Endless Runner" class="project-img">
-                    <div class="project-content">
-                        <h4>Endless Runner</h4>
-                        <p>Developed a solo endless runner with increasing speed and checkpoint-based time extension mechanics.</p>
-                        <a href="https://github.com/burakenesportakal/Run_Butcher" target="_blank" class="project-btn">View on GitHub</a>
+            <div class="projects-wrapper">
+                <button class="scroll-btn left-btn" onclick="scrollProjects(-1)">&#10094;</button>
+
+                <div class="projects-horizontal-scroll" id="projectScroll">
+                    
+                    <div class="project-card">
+                        <img src="images/endless runner.png" alt="Endless Runner" class="project-img">
+                        <div class="project-content">
+                            <h4>Endless Runner</h4>
+                            <p>Developed a solo endless runner with increasing speed and checkpoint-based time extension mechanics.</p>
+                            <a href="https://github.com/burakenesportakal/Run_Butcher" target="_blank" class="project-btn">View on GitHub</a>
+                        </div>
                     </div>
+
+                    <div class="project-card">
+                        <img src="images/pathfinder.png" alt="PathFinder" class="project-img">
+                        <div class="project-content">
+                            <h4>Maze Solver / PathFinder</h4>
+                            <p>Procedural maze generation and solving simulation using DFS, BFS, Dijkstra, and A* algorithms.</p>
+                            <a href="https://github.com/burakenesportakal/MazeSolverWithUnity" target="_blank" class="project-btn">View on GitHub</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="images/era.jpg" alt="RPG - ERA" class="project-img">
+                        <div class="project-content">
+                            <h4>RPG - ERA</h4>
+                            <p>A comprehensive RPG featuring quest, inventory, skill tree, and enemy AI systems built with FSM and modular design.</p>
+                            <a href="https://github.com/burakenesportakal/RPG-ERA" target="_blank" class="project-btn">View on GitHub</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="images/parasite.png" alt="Parazite" class="project-img">
+                        <div class="project-content">
+                            <h4>Parazite</h4>
+                            <p>A suspenseful horror game jam project developed around the "Take over" theme.</p>
+                            <a href="https://github.com/burakenesportakal/HalloweenJam" target="_blank" class="project-btn">View on GitHub</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="images/qubix.jpg" alt="Qubix" class="project-img">
+                        <div class="project-content">
+                            <h4>Qubix</h4>
+                            <p>A specialized case study project designed and developed for Good Job Games.</p>
+                            <a href="https://github.com/burakenesportakal/Qubix" target="_blank" class="project-btn">View on GitHub</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="images/ayazjam.png" alt="Perfect Butterfly" class="project-img">
+                        <div class="project-content">
+                            <h4>Perfect Butterfly</h4>
+                            <p>A fast-paced game project created in a short timeframe during the Ayazjam event.</p>
+                            <a href="https://github.com/burakenesportakal/Project_Butterfly" target="_blank" class="project-btn">View on GitHub</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="images/bomboclat.png" alt="Bomboclat" class="project-img">
+                        <div class="project-content">
+                            <h4>Bomboclat</h4>
+                            <p>A creative game jam project developed during the Jamination event.</p>
+                            <a href="https://github.com/burakenesportakal/Jaminton8" target="_blank" class="project-btn">View on GitHub</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="images/mask.png" alt="Mask" class="project-img">
+                        <div class="project-content">
+                            <h4>Mask</h4>
+                            <p>A game project designed and coded during the Global Game Jam marathon.</p>
+                            <a href="https://github.com/burakenesportakal/GGJMASK" target="_blank" class="project-btn">View on GitHub</a>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="project-card">
-                    <img src="images/pathfinder.png" alt="PathFinder" class="project-img">
-                    <div class="project-content">
-                        <h4>Maze Solver / PathFinder</h4>
-                        <p>Procedural maze generation and solving simulation using DFS, BFS, Dijkstra, and A* algorithms.</p>
-                        <a href="https://github.com/burakenesportakal/MazeSolverWithUnity" target="_blank" class="project-btn">View on GitHub</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="images/era.jpg" alt="RPG - ERA" class="project-img">
-                    <div class="project-content">
-                        <h4>RPG - ERA</h4>
-                        <p>A comprehensive RPG featuring quest, inventory, skill tree, and enemy AI systems built with FSM and modular design.</p>
-                        <a href="https://github.com/burakenesportakal/RPG-ERA" target="_blank" class="project-btn">View on GitHub</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="images/parasite.png" alt="Parazite" class="project-img">
-                    <div class="project-content">
-                        <h4>Parazite</h4>
-                        <p>A suspenseful horror game jam project developed around the "Take over" theme.</p>
-                        <a href="https://github.com/burakenesportakal/HalloweenJam" target="_blank" class="project-btn">View on GitHub</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="images/qubix.jpg" alt="Qubix" class="project-img">
-                    <div class="project-content">
-                        <h4>Qubix</h4>
-                        <p>A specialized case study project designed and developed for Good Job Games.</p>
-                        <a href="https://github.com/burakenesportakal/Qubix" target="_blank" class="project-btn">View on GitHub</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="images/ayazjam.png" alt="Perfect Butterfly" class="project-img">
-                    <div class="project-content">
-                        <h4>Perfect Butterfly</h4>
-                        <p>A fast-paced game project created in a short timeframe during the Ayazjam event.</p>
-                        <a href="https://github.com/burakenesportakal/Project_Butterfly" target="_blank" class="project-btn">View on GitHub</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="images/bomboclat.png" alt="Bomboclat" class="project-img">
-                    <div class="project-content">
-                        <h4>Bomboclat</h4>
-                        <p>A creative game jam project developed during the Jamination event.</p>
-                        <a href="https://github.com/burakenesportakal/Jaminton8" target="_blank" class="project-btn">View on GitHub</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="images/mask.png" alt="Mask" class="project-img">
-                    <div class="project-content">
-                        <h4>Mask</h4>
-                        <p>A game project designed and coded during the Global Game Jam marathon.</p>
-                        <a href="https://github.com/burakenesportakal/GGJMASK" target="_blank" class="project-btn">View on GitHub</a>
-                    </div>
-                </div>
-
+                <button class="scroll-btn right-btn" onclick="scrollProjects(1)">&#10095;</button>
             </div>
         </section>
 
@@ -234,5 +240,16 @@
         <p>&copy; 2026 Burak Enes Portakal. All rights reserved.</p>
     </footer>
 
+    <script>
+        function scrollProjects(direction) {
+            const container = document.getElementById('projectScroll');
+            const scrollAmount = 340; 
+            
+            container.scrollBy({
+                left: direction * scrollAmount,
+                behavior: 'smooth' 
+            });
+        }
+    </script>
 </body>
 </html>
